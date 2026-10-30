@@ -1,3 +1,7 @@
 *.pdf binary
 *.html text eol=lf
 .nojekyll -text
+*.css text eol=lf
+*.js text eol=lf
+*.yml text eol=lf
+.gitattributes text eol=lf
