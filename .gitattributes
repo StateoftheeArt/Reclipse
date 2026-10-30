@@ -1,0 +1,3 @@
+*.pdf binary
+*.html text eol=lf
+.nojekyll -text

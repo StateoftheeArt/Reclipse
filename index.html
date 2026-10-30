@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#edf1ef">
+  <meta name="description" content="Corbett Powell - resume and interactive portfolio.">
+  <title>Corbett Powell - Resume and Reclipse</title>
+  <style>
+    :root{color-scheme:light dark;--paper:#edf1ef;--ink:#213b46;--muted:#627781;--line:#a9bdc5;--surface:#f9faf7}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:42px 24px;background:radial-gradient(ellipse at 70% 10%,#d1e1e8 0,transparent 55%),linear-gradient(145deg,#f4f5ef,var(--paper));color:var(--ink);font-family:"Segoe UI",Arial,sans-serif}
+    main{width:min(720px,100%)}
+    h1{font-size:clamp(38px,7vw,60px);font-weight:350;letter-spacing:-.055em;line-height:1.05;margin:0 0 15px}
+    .headline{font-size:clamp(15px,2.8vw,18px);line-height:1.6;color:var(--muted);margin:0 0 36px}
+    nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .format{position:relative;display:flex;flex-direction:column;min-height:225px;padding:29px 27px 25px;border:1px solid var(--line);border-radius:3px;text-decoration:none;color:inherit;background:linear-gradient(135deg,#fffef9,var(--surface));box-shadow:0 16px 50px #284d6010;transition:transform .2s,border-color .2s,box-shadow .2s}
+    .format:hover{transform:translateY(-3px);border-color:var(--ink);box-shadow:0 20px 55px #284d601c}
+    .format:focus-visible{outline:3px solid #346c82;outline-offset:6px}
+    .format svg{width:44px;height:48px;margin-bottom:26px;flex:none;stroke:currentColor;stroke-width:1.15;fill:none;opacity:.75}
+    .label{display:block;font-size:clamp(18px,3.5vw,24px);font-weight:400;line-height:1.25;letter-spacing:-.025em;margin-top:auto}
+    .kind{display:block;font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5}
+    .reclipse{background:linear-gradient(130deg,#fbfefc,#d8e4e8 36%,#eff4f3 65%,#c6d8e0)}
+    .location{margin:27px 0 0;font:11px/1.6 Consolas,monospace;letter-spacing:.04em;color:var(--muted)}
+    @media(max-width:460px){body{padding:35px 20px}nav{gap:13px}.headline{margin-bottom:28px}.format{min-height:207px;padding:23px 18px 21px}.format svg{width:35px;height:40px;margin-bottom:25px}.label{min-height:2.5em}.kind{font-size:11px}.location{font-size:10px;letter-spacing:0}}
+    @media(prefers-color-scheme:dark){:root{--paper:#122633;--ink:#e3edf0;--muted:#a1b8c2;--line:#5b7684;--surface:#18303e}body{background:radial-gradient(ellipse at 75% 10%,#2c465c 0,transparent 55%),linear-gradient(145deg,#0e1e2b,var(--paper))}.format{background:linear-gradient(135deg,#1b3341,var(--surface));box-shadow:0 16px 50px #0002}.reclipse{background:linear-gradient(130deg,#294554,#36515e 36%,#203b4b 65%,#304e60)}.format:focus-visible{outline-color:#bfdce8}}
+    @media(prefers-reduced-motion:reduce){.format{transition:none}.format:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Corbett Powell</h1>
+    <p class="headline">Operations, electronics and creative technology</p>
+    <nav aria-label="Choose a resume format">
+      <a class="format pdf" href="resume.pdf" aria-label="PDF format - view the conventional resume">
+        <svg viewBox="0 0 44 48" aria-hidden="true"><path d="M8 3h20l8 8v34H8zM28 3v9h8M14 21h16M14 27h16M14 33h11"/></svg>
+        <span class="label">PDF format</span>
+        <span class="kind">Résumé</span>
+      </a>
+      <a class="format reclipse" href="reclipse.html" aria-label="Reclipse format - open the interactive portfolio">
+        <svg viewBox="0 0 44 48" aria-hidden="true"><circle cx="22" cy="19" r="13"/><path d="M11 13c6 4 16 4 22 0M10 24c8-3 16-3 24 0M22 32v8M7 42c9-4 21-4 30 0M12 46c6-2 14-2 20 0"/></svg>
+        <span class="label">Reclipse format</span>
+        <span class="kind">Interactive portfolio</span>
+      </a>
+    </nav>
+    <p class="location">Winnipeg, Manitoba, Canada</p>
+  </main>
+</body>
+</html>
